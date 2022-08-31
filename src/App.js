@@ -1,19 +1,13 @@
-import personas from './data/personas.json';
+// import personas from './data/personas.json';
+import NavBar from './components/NavBar';
+import './app/styles.css';
+
 
 const App = () => {
   return (
-    <div className="App">
-      <p>Hola bienvenidos a mi proyecto de venta de entradas</p>
-      {
-        personas.map(persona => (
-          <div>
-            <p>Nombre: {persona.nombre}</p>
-            <p>Edad: {persona.edad}</p>
-            <hr/>
-          </div>
-          
-        ))
-      }
+    <div >
+      <NavBar />
+
     </div>
   );
 }
