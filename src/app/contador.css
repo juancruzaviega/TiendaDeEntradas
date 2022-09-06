@@ -1,0 +1,13 @@
+.contador{
+    background-color: rgb(196, 134, 254);
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border-style:groove;
+    border-color: goldenrod;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    
+}
