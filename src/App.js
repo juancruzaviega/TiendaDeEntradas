@@ -4,13 +4,16 @@ import NavBar from './components/NavBar';
 import './app/styles.css';
 import CartWidget from './components/CartWidget';
 import ItemList from './components/ItemList';
+import ItemListContainer from './components/ItemListContainer';
+
 
 
 const App = () => {
   return (
     <div >
       <NavBar />
-      <ItemList greetings={"Bienvenido!"} />
+      <ItemListContainer greetings={"Bienvenido!"} />
+
     </div >
   );
 }

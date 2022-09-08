@@ -1,17 +1,10 @@
 import React from 'react'
-import ItemCount from './ItemCount'
+import Item from './Item'
 
-const ItemList = ({ greetings }) => {
-    const onAdd = (quantity) => {
-        console.log(`Compraste ${quantity} unidades`)
-    };
-
+const ItemList = ({ data = [] }) => {
     return (
-        <>
-            <h2>{greetings}</h2>
-            <ItemCount initial={1} stock={10} onAdd={onAdd} />
-        </>
-    )
+        data.map(joysticks => <Item key={joysticks.id} info={joysticks} />)
+    );
 }
 
-export default ItemList
+export default ItemList;

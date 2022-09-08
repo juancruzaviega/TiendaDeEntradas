@@ -8,7 +8,7 @@ function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="white" variant="white">
             <Container>
-                <Navbar.Brand href="#home">Tienda de Entradas</Navbar.Brand>
+                <Navbar.Brand href="#home">Tienda Gamer</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">

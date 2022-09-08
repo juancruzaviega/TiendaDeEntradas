@@ -23,3 +23,17 @@ a{
     font-weight: bolder;
     font-size: larger;
 }
+
+.joysticks {
+    display: block;
+    width: 500px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.joysticks img{
+    width: 100%;
+    height: 100%;
+    
+}
