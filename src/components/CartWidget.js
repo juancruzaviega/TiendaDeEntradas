@@ -1,6 +1,8 @@
 import React from 'react';
 
-const CartWidget = () => {
+
+
+export const CartWidget = () => {
     return (
         <div>
             <img src="../img/carretilla.png" alt="carro" width={50} height={50} />
