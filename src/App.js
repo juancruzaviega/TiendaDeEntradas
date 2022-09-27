@@ -14,7 +14,7 @@ const App = () => {
   return (
     < >
       <BrowserRouter>
-        <CartProvider value=''>
+        <CartProvider >
           <NavBar />
           <Routes>
             <Route path='/' element={<ItemListContainer greetings={"Bienvenido!"} />
