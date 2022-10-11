@@ -13,7 +13,7 @@ const Cart = () => {
             phone: '1234561234',
             adress: 'cuba'
         },
-        items: cart.map(product => ({ id: product.id, title: product.title, price: product.price, quantity: product.quantity })),
+        items: cart.map(product => ({ id: product.id, title: product.title, precio: product.precio, quantity: product.quantity })),
         total: totalPrice(),
     }
 
