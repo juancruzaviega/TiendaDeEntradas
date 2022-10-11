@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../context/CartContext';
 import ItemCart from './ItemCart';
+import db from '../firebase/config';
 
 const Cart = () => {
     const { cart, totalPrice } = useCartContext();
@@ -18,7 +19,7 @@ const Cart = () => {
     }
 
     const handleClick = () => {
-        const db = getFirestore();
+        getFirestore();
         const ordersCollection = collection(db, 'orders');
         addDoc(ordersCollection, order)
             .then(({ id }) => console.log(id))
