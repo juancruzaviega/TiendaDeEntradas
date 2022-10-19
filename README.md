@@ -2,7 +2,11 @@
 
 ## Description
 
-La idea de este proyecto es hacer un ecommerce dedicado al gaming, donde podrás encotrar desde accesorios hasta juegos.
+La idea de este proyecto es hacer un ecommerce dedicado al gaming, donde podrás encontrar desde accesorios hasta juegos.
+
+## Functions
+
+Al seleccionar los productos deseados, agregarlos al carrito y clickear en 'emitir compra', se guardarán los datos de la orden en firebase.
 
 ### Categories
 
