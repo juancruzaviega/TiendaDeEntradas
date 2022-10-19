@@ -1,11 +1,12 @@
 import React, { useState, useContext } from 'react'
+import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import db from '../firebase/config';
 const CartContext = React.createContext([]);
 
 export const useCartContext = () => useContext(CartContext);
 
 const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
-
     const addProduct = (item, quantity) => {
         if (isInCart(item.id)) {
             setCart(cart.map(product => {
@@ -15,7 +16,6 @@ const CartProvider = ({ children }) => {
             setCart([...cart, { ...item, quantity }])
         }
     }
-    // console.log('carrito: ', cart);
 
     const totalPrice = () => {
         return cart.reduce((prev, act) => prev + act.quantity * act.precio, 0);
@@ -39,6 +39,7 @@ const CartProvider = ({ children }) => {
             totalPrice,
             totalProducts,
             cart
+
         }}>
             {children}
         </CartContext.Provider>

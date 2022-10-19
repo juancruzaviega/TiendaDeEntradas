@@ -1,3 +1,17 @@
+# Tienda Gamer
+
+## Description
+
+La idea de este proyecto es hacer un ecommerce dedicado al gaming, donde podrás encotrar desde accesorios hasta juegos.
+
+### Categories
+
+Por el momento, el sitio dispone de dos categorias:
+-Accesorios
+-Juegos
+
+#### Esta APP todavia se encuentra en desarrollo
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
